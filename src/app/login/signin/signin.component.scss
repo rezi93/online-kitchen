@@ -1,0 +1,86 @@
+body{
+    background-color: black;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    height: 400px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: rgb(13, 13, 13);
+    border-radius: 25px;
+   
+}
+.signh2{
+    font-size: 28px;
+    color: red;
+    margin:0 auto;
+}
+
+.txt{
+   
+    margin-bottom: 50px;
+    
+}
+#user{
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    margin: 0 auto;
+    
+}
+#pwd{
+    width: 100%;
+    height: 50px;
+    
+    border-radius: 25px;
+}
+.buttons{
+    margin-top: 50px;
+   margin: 0 auto;
+    display: flex;
+  
+    
+}
+.logform{
+   margin-top: 50px;
+   max-width: 100%;
+   width: 500px;
+   
+   margin: 0 auto;
+   
+   
+}
+.entypo-user-add{
+    margin-left: 150px;
+}
+.buttons{
+    max-width: 100%;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.error{
+    background-color: green;
+    margin-left: 150px;
+}
+
+
+@media screen and (max-width:500px){
+
+    .login{
+        width: 100%;
+        height: auto;
+        margin: auto;
+        margin-top: 100px;
+        background-color: rgb(13, 13, 13);
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

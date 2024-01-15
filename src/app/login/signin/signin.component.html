@@ -1,0 +1,25 @@
+<div class="login">
+  <h2 class="signh2">Sign-in</h2>
+  <form class="logform" [formGroup]="signInform" (submit)="onsubmit()">
+    <div class="txt">
+      <input id="user" type="text" placeholder="Username" formControlName="email" name="user">
+      <label for="user" class="entypo-user"></label>
+      <div *ngIf="!signInform.controls['email'].valid && signInform.controls['email'].touched">
+        <span class="error">required</span>
+      </div>
+      
+    </div>
+    <div class="txt">
+      <input id="pwd" type="password" placeholder="Password" formControlName="pwd" name="passw" />
+      <label for="pwd" class="entypo-lock"></label>
+      <div *ngIf="!signInform.controls['pwd'].valid && signInform.controls['pwd'].touched">
+        <span class="error">required</span>
+      </div>
+      
+    </div>
+    <div class="buttons">
+      <button type="submit" class="btn btn-primary" 
+      >sign in</button>
+      <button id="butt" class="btn btn-primary" (click)="gotoregister()">Register</button>
+
+    </div>

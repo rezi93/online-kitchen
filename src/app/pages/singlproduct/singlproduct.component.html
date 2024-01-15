@@ -1,0 +1,15 @@
+<div id="menu-box" class="col-lg-6" *ngIf="menuData">
+    <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3">Back</a>
+    <img src="{{menuData.photoUrl}}" width="150px" />
+    <div class="desc">
+    <h1 class="mt-3">{{ menuData.description }}</h1>
+    <span class="p-box">
+    
+    <p class="p"> Restaurant:{{ menuData.restaurantName}}</p>
+    <p class="p"> Open:{{ menuData. openingHours}}</p>
+    </span>
+    
+    </div>
+    <button class="order" (click)="getOrder()"  >Order</button>
+  </div>
+  

@@ -1,0 +1,23 @@
+.navbar-light .navbar-nav .nav-link
+{
+    color: black;
+}
+.navbar-light .navbar-nav .nav-link.active-link
+{
+    color: rgb(16, 16, 60);
+    text-decoration: underline;
+}
+.logo{
+    width: 50px;
+}
+a{
+    text-decoration: none;
+}
+.drop{
+    font-size: 22px;
+    font-weight: 600;
+}
+.container-fluid{
+    display: flex;
+    justify-content: space-between;
+}

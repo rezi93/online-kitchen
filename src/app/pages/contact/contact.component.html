@@ -1,0 +1,27 @@
+<form class="col-lg-8" [formGroup]="contactForm">
+    <div class="row">
+      <div class="col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter First Name" formControlName="firstName">
+      </div>
+      <div class="col-lg-6 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter Last Name" formControlName="lastName">
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter Email ID" formControlName="email">
+      </div>
+      <div class="col-lg-12 mt-2 mb-2">
+        <input type="text" class="form-control" placeholder="Enter Mobile" formControlName="mobile">
+      </div>
+      <div class="descr">
+        <label class="desc" for="floatingTextarea2">Comments</label>
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" formControlName="comments"></textarea>
+      </div>
+      <div>
+        <span class="error">write your rate</span>
+      </div>
+      <div class="col-lg-12">
+        <button class="btn btn-md btn-info" type="button" (click)="onSubmitForm()">Submit</button>
+      </div>
+    </div>
+  </form>
+  

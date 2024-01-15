@@ -1,0 +1,99 @@
+.banner
+{
+    background-image: url('https://secretldn.com/wp-content/uploads/2022/04/BRIX1-1024x682.jpg');
+    height: 600px;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.content
+{
+    top: 30%;
+    left: 20%;
+    position: absolute;
+}
+.content h1 
+{
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold;
+  
+}
+.content a 
+{
+    text-decoration: none;
+    background-color: #fff;
+    color:red;
+    padding: 15px 20px;
+    border-radius: 5px;
+}
+
+.content a:hover 
+{
+    background-color: green;
+    color: #fff;
+    cursor: pointer;
+}
+
+.stepBox 
+{
+    background-color: #000;
+    padding: 20px 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+.stepBox h1 
+{
+    font-size: 50px;
+    font-weight: bold;
+    color:var(--primary-color);
+}
+.stepBox p 
+{
+    font-size: 20px;
+    font-style: italic;
+    color: #fff;
+}
+.highlight
+{
+    color: rgb(78, 78, 87);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.foodbox 
+{
+    padding: 10px 5px;
+} 
+.foodbox img
+{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.foodbox h1 
+{
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+.viewmorebtn
+{
+    text-decoration: none;
+    background-color:rgb(47, 47, 255);
+    color: #000;
+    padding: 10px 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    
+}
+
+@media screen and (max-width:600px)
+{
+    .banner
+{
+    height: 700px;
+}
+}

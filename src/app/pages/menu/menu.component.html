@@ -1,0 +1,21 @@
+<div class="container mt-5 mb-5">
+
+    <div class="row">
+
+        <div class="col-lg-4" *ngFor="let item of product">
+
+            <div class="foodbox mt-3 mb-3">
+                <img src="{{item.photoUrl}}">
+                <h1>{{item.categoryName}}</h1>
+                
+                <br/>
+                <a class="buybtn" (click)="getProductDEtail(item.categoryId)">Buy Now <i class="bi bi-bag"></i></a>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</div>
